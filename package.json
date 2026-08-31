@@ -29,21 +29,23 @@
     "test": "vp test",
     "check": "vp check",
     "prepublishOnly": "vp run build",
-    "prepare": "vp config"
+    "prepare": "effect-tsgo patch --oxlint"
   },
   "dependencies": {
     "effect": "^4.0.0-beta.107"
   },
   "devDependencies": {
+    "@effect/tsgo": "^0.38.0",
     "@effect/vitest": "^4.0.0-beta.107",
+    "@oxlint/plugins": "^1.80.0",
     "@types/node": "^26.1.1",
     "bumpp": "^11.1.0",
     "typescript": "^7.0.2",
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.9",
-    "vite-plus": "^0.2.4"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.3.0",
+    "vite-plus": "^0.3.0"
   },
   "overrides": {
-    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.9"
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.3.0"
   },
   "devEngines": {
     "packageManager": {
